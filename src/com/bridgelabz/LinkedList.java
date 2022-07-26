@@ -40,6 +40,17 @@ public class LinkedList <T> {
         return deletedData;
     }
 
+    public T remove() {
+        T deletedData = tail.data;
+        Node<T> temp = head;
+        while(temp.next != tail){
+            temp = temp.next;
+        }
+        temp.next = null;
+        temp = tail;
+        return deletedData;
+    }
+
     public void print() {
         Node<T> temp = head;
         while(temp != null){
