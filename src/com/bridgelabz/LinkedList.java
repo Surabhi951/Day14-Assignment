@@ -17,6 +17,17 @@ public class LinkedList <T> {
         }
     }
 
+    public void add(T key) {
+        Node<T> newNode = new Node<>(key);
+        if(head == null) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            tail.next = newNode;
+            tail = newNode;
+        }
+    }
+
     public void print() {
         Node<T> temp = head;
         while(temp != null){
@@ -24,5 +35,4 @@ public class LinkedList <T> {
             temp = temp.next;
         }
     }
-
 }
