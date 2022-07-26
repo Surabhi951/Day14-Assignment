@@ -34,6 +34,12 @@ public class LinkedList <T> {
         node.next = tail;
     }
 
+    public T pop(){
+        T deletedData = head.data;
+        head = head.next;
+        return deletedData;
+    }
+
     public void print() {
         Node<T> temp = head;
         while(temp != null){
