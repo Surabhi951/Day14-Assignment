@@ -17,7 +17,7 @@ public class LinkedListMain {
         linkedList2.add(56);linkedList2.add(30);
         linkedList2.add(70);
         linkedList1.print();
-/*        System.out.println();
+/*       System.out.println();
         System.out.println(linkedList2.remove());
         linkedList2.print();
 */
@@ -26,6 +26,12 @@ public class LinkedListMain {
             System.out.println("Element Found!!");
         else
             System.out.println("Element not Found!!");
+
+
+        System.out.println(linkedList2.insertAfter(30,40));
+        System.out.println();
+        linkedList2.print();
+
 
 
     }
