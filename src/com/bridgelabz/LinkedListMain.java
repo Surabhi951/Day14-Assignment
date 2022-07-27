@@ -21,7 +21,8 @@ public class LinkedListMain {
         System.out.println(linkedList2.remove());
         linkedList2.print();
 */
-        System.out.println();
+
+       System.out.println();
         if (linkedList2.search(30) != null)
             System.out.println("Element Found!!");
         else
@@ -32,6 +33,14 @@ public class LinkedListMain {
         System.out.println();
         linkedList2.print();
 
+        System.out.println();
+        linkedList2.popNode(40);
+        linkedList2.print();
+
+        System.out.println();
+
+        System.out.println("Size of Array is :");
+        System.out.println(linkedList2.size());
 
 
     }

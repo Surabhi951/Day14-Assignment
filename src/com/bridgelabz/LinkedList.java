@@ -72,6 +72,28 @@ public class LinkedList <T> {
         return false;
     }
 
+    public void popNode(T data){
+        Node<T> searchedNode = search(data);
+        Node<T> temp = head;
+        while(temp.next != searchedNode){
+            temp = temp.next;
+        }
+        temp.next = searchedNode.next;
+
+    }
+
+    public int size() {
+        int count = 0; // No data 1 element
+
+        Node<T> temp = head;
+
+        while (temp != null) {
+            count++;
+            temp = temp.next;
+        }
+        return count;
+    }
+
     public void print() {
         Node<T> temp = head;
         while(temp != null){
