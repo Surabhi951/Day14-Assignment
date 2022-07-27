@@ -17,4 +17,9 @@ public class Stack<T extends Comparable<T>> {
         linkedList.print();
     }
 
+    public T pop() {
+        return linkedList.pop();
+    }
+
 }
+

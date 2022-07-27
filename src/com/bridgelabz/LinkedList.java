@@ -123,7 +123,5 @@ public class LinkedList <T extends  Comparable<T>> {
             temp = temp.next;
         }
     }
-
-
 }
 
