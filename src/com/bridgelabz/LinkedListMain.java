@@ -32,7 +32,7 @@ public class LinkedListMain {
         System.out.println(linkedList2.insertAfter(30,40));
         System.out.println();
         linkedList2.print();
-        System.out.println();
+
 
         System.out.println();
         linkedList2.popNode(40);
