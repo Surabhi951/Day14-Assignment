@@ -42,6 +42,10 @@ public class LinkedListMain {
         System.out.println("Size of Array is :");
         System.out.println(linkedList2.size());
 
+        System.out.println(linkedList2.insertAfter(30,40));
+        linkedList2.sortList();
+        linkedList2.print();
+
 
     }
 }
